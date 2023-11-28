@@ -1,3 +1,5 @@
 #!/bin/bash
 
-seq 5 | ./calculator
+out=$(seq 5|./calculator.py)
+
+[ "${out}" = 14.0 ]
