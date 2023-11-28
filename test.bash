@@ -2,4 +2,4 @@
 
 out=$(seq 5|./calculator.py)
 
-[ "${out}" = 14.0 ]
+[ "${out}" = 15.0 ]
