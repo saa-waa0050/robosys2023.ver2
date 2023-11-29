@@ -5,5 +5,8 @@
 import sys
 
 ans = [ float(formula) for formula in sys.stdin ]
-
-print(sum(ans))
+ans=sum(ans)
+if ans.is_integer():
+    print(int(ans))
+else:
+    print(ans)
