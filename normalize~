@@ -4,9 +4,8 @@
 
 import sys
 
-ans =[0]
+normalize =[0]
 
 for fomula in sys.stdin:
-    normalize=str(fomula).split()
-    ans+=normalize
-print(ans))
+    normalize+=str(fomula).split()
+print(normalize)
