@@ -3,8 +3,8 @@
 #SPDX-License-Identifier:BSD-3-Clause
 
 import sys
+import re
+import unicodedata
 
-normalize =[0]
-
-normalize=[ str(formula).split() for formula in sys.stdin ]
-print(normalize)
+ans=[ re.findall(r'|\-+\d+\.+\d+|\-+\d+|\d+\.+\d+|\d+',unicodedata.normalize("NFKD",str(formula))) for formula in sys.stdin ]
+print(sum(ans,[]))
