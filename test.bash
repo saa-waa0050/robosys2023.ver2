@@ -10,9 +10,9 @@ ng (){
 res=0
 
 out=$(seq 5|./calculator.py)
-[ "${out}" = 15 ] || ng ${LINENO}
+[ "${out}" = 15.0 ] || ng ${LINENO}
 
-out=$(echo a|./calculator.py)
+out=$(echo あ|./calculator.py)
 [ "$?" = 1 ]      | ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 

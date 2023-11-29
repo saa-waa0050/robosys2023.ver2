@@ -4,11 +4,6 @@
 
 import sys
 
-ans=0
-for line in sys.stdin:
-    try:
-        ans+=int(line)
-    except:
-        ans+=float(line)
+ans = [ float(formula) for formula in sys.stdin ]
 
-print(ans)
+print(sum(ans))
