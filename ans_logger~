@@ -4,8 +4,8 @@
 
 import sys
 
-file =open(ans_log.txt,'a')
+file =open('ans_log.txt','a')
 file.write('ans->')
 for formula in sys.stdin:
-    file.write(formula)
+    file.write(formula+'\n'+'----------'+'\n')
 file.close
