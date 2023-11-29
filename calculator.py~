@@ -7,6 +7,6 @@ import sys
 ans = [ float(formula) for formula in sys.stdin ]
 ans=sum(ans)
 if ans.is_integer():
-    print(int(ans))
-else:
-    print(ans)
+    ans=int(ans)
+
+print(ans)
