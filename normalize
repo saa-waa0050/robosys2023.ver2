@@ -7,4 +7,7 @@ import re
 import unicodedata
 
 ans=[ re.findall(r'|\-+\d+\.+\d+|\-+\d+|\d+\.+\d+|\d+',unicodedata.normalize("NFKD",str(formula))) for formula in sys.stdin ]
-print(sum(ans,[]))
+ans=sum(ans,[])
+for i in range(len(ans)):
+    if ans[i] != "":
+        print(ans[i])
