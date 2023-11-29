@@ -5,6 +5,7 @@
 
 ## plusコマンド
 [![test](https://github.com/saa-waa0050/robosys2023.ver2/actions/workflows/test.yml/badge.svg)](https://github.com/saa-waa0050/robosys2023.ver2/actions/workflows/test.yml)
+開発中
 ### 必要なソフトウェア
 * Python(テスト済み) 
   - [x] ver3.7
@@ -13,6 +14,6 @@
   - [x] ver3.10　 
 
 ### テスト環境
-* Ubuntu20.24 on Windows
+* Ubuntu20.24 on windows)
 
 © 2023 Shusuke Osawa
