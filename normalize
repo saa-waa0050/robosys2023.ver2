@@ -8,6 +8,9 @@ import unicodedata
 
 ans=[ re.findall(r'|\-+\d+\.+\d+|\-+\d+|\d+\.+\d+|\d+',unicodedata.normalize("NFKD",str(formula))) for formula in sys.stdin ]
 ans=sum(ans,[])
+file=open('ans_log.txt','a')
 for i in range(len(ans)):
     if ans[i] != "":
         print(ans[i])
+        file.write(ans[i]+'\n')
+file.close
