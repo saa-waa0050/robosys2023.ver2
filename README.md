@@ -24,20 +24,20 @@ git clone https://github.com/saa-waa0050/robosys2023.ver2.git
 ```
 ファイル内の数値（整数、浮動小数点数、負数に対応）を抽出し、出力します。
 - 実行例
-```ruby:suti
+```c:suti
 数値　22:19.5:-1083:10:-90.8
 ```
-```rudy:コマンド
+```java:コマンド
 ./normalize < suti
 ```
-```rudy:結果
+```python:結果
 22
 19.5
 -1083
 10
 -90.8
 ```
-また、出力結果は'ans_log.txt'に記録されます。
+また、出力結果はans_log.txtに記録されます。
 
 ## 入力数値の合計
 ## 必要なソフトウェア
@@ -50,6 +50,6 @@ git clone https://github.com/saa-waa0050/robosys2023.ver2.git
 ## テスト環境
 * Ubuntu20.24 on Windows)
 
-##権利
+## 権利
 - このソフトウェアパッケージは、３条項BSDライセンスの下、再配布及び使用が許可されます。
 - © 2023 Shusuke Osawa
