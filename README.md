@@ -26,15 +26,15 @@ git clone https://github.com/saa-waa0050/robosys2023.ver2.git
 ファイル内の数値（整数、浮動小数点数、負数に対応）を抽出し、出力します。
 - 実行例
 
-```python:suti.py
+```:suti
 数値　22:19.5:-1083:10:-90.8
 ```
 
-```python:コマンド
+``` : コマンド
 ./normalize < suti.py
 ```
 
-```python:結果.py
+```: 結果.py
 22
 19.5
 -1083
