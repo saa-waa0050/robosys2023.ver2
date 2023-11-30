@@ -171,7 +171,7 @@ seq 5 |./times
 
 `コマンド`
 ```
-./normalize < suti.txt |./times
+./normalize < suti.txt |./avg
 ```
 
 `結果`
