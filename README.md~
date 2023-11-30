@@ -19,17 +19,21 @@ git clone https://github.com/saa-waa0050/robosys2023.ver2.git
 
 ## 各機能の使い方
 ### 入力文章から数値を抽出
-```ruby:数値を抽出
+
+```python:数値を抽出
 ./normalize < ファイル名
 ```
 ファイル内の数値（整数、浮動小数点数、負数に対応）を抽出し、出力します。
 - 実行例
-```c:suti
+
+```python:suti
 数値　22:19.5:-1083:10:-90.8
 ```
-```java:コマンド
+
+```python:コマンド
 ./normalize < suti
 ```
+
 ```python:結果
 22
 19.5
