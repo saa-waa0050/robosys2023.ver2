@@ -7,9 +7,10 @@ import math
 
 ans = [ float(formula) for formula in sys.stdin ]
 ans=math.prod(ans)
-if ans.is_integer():
+if ans.is_integer():  #計算結果が整数値なら整数化
     ans=int(ans)
 
+#結果を別ファイルへ記録
 file=open('ans_log.txt','a')
 file.write('times-> ')
 file.write(str(ans)+'\n')
