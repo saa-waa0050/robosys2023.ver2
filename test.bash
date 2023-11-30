@@ -13,25 +13,25 @@ res=0
 
 #各テストここから
 #plus
-out=$(seq 5|./plus)
+out=$(seq 5|./plus)  #計算結果のチェック
 [ "${out}" = 15 ] || ng ${LINENO}
 
-out=$(tail -n 2 ans_log.txt|head -n 1)
+out=$(tail -n 2 ans_log.txt|head -n 1)  #ファイル出力のチェック
 [ "${out}" = "sum-> 15" ] || ng ${LINENO}
 
-out=$(echo あ|./plus)
+out=$(echo あ|./plus)  #全角文字に対するチェック
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-out=$(echo @|./plus)
+out=$(echo @|./plus)  #記号に対するチェック
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-out=$(echo /n|./plus)
+out=$(echo /n|./plus)  #改行（制御文字）に対するチェック
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-out=$(echo |./plus)
+out=$(echo |./plus)  #空白文字に対するチェック
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
@@ -92,13 +92,13 @@ out=$(echo |./avg)
 out=$(echo 5|./normalize)
 [ "${out}" = 5 ] || ng ${LINENO}
 
-out=$(echo 5.5|./normalize)
+out=$(echo 5.5|./normalize) #小数点の抽出チェック
 [ "${out}" = 5.5 ] || ng ${LINENO}
 
-out=$(echo ５．５|./normalize)
+out=$(echo ５．５|./normalize)  #全角数字の変換・抽出チェック
 [ "${out}" = 5.5 ] || ng ${LINENO}
 
-out=$(echo -5.5|./normalize)
+out=$(echo -5.5|./normalize)  #負の値の抽出チェック
 [ "${out}" = -5.5 ] || ng ${LINENO}
 
 out=$(echo あ|./normalize)
@@ -119,6 +119,6 @@ out=$(echo @|./normalize)
 
 #各テストここまで
 
-[ "$res" = 0 ] && echo OK
+[ "$res" = 0 ] && echo OK  #オールクリアでＯＫが出力
 
 exit $res
