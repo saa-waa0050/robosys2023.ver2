@@ -1,7 +1,7 @@
 # RoboSys2023.Ver2
 [![test](https://github.com/saa-waa0050/robosys2023.ver2/actions/workflows/test.yml/badge.svg)](https://github.com/saa-waa0050/robosys2023.ver2/actions/workflows/test.yml)
 
-このリポジトリは千葉工業大学　ロボットシステムの授業用・学習用リポジトリです。
+このリポジトリは千葉工業大学　ロボットシステム学の授業用・学習用リポジトリです。
 （robosys2023.ver1は理解不足と操作ミスにより訳が分からなくなったので、ver2で新設しました...2023/11/28）
 
 ## 機能について
