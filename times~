@@ -10,4 +10,9 @@ ans=math.prod(ans)
 if ans.is_integer():
     ans=int(ans)
 
+file=open('ans_log.txt','a')
+file.write('times-> ')
+file.write(str(ans)+'\n')
+file.write('----------'+'\n')
+file.close()
 print(ans)

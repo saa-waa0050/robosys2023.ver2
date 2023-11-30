@@ -13,4 +13,4 @@ for i in range(len(ans)):
     if ans[i] != "":
         print(ans[i])
         file.write(ans[i]+'\n')
-file.close
+file.close()

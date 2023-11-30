@@ -9,4 +9,9 @@ ans=sum(ans)/len(ans)
 if ans.is_integer():
     ans=int(ans)
 
+file=open('ans_log.txt','a')
+file.write('avg-> ')
+file.write(str(ans)+'\n')
+file.write('----------'+'\n')
+file.close()
 print(ans)

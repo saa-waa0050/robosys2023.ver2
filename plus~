@@ -12,4 +12,6 @@ if ans.is_integer():
 file=open('ans_log.txt','a')
 file.write('sum-> ')
 file.write(str(ans)+'\n')
+file.write('----------'+'\n')
+file.close()
 print(ans)
