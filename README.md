@@ -17,6 +17,30 @@
 >```
 >git clone https://github.com/saa-waa0050/robosys2023.ver2.git
 >```
+>実行結果
+>```
+>Cloning into 'robosys2023.ver2'...
+>remote: Enumerating objects: 353, done.
+>remote: Counting objects: 100% (113/113), done.
+>remote: Compressing objects: 100% (78/78), done.
+>remote: Total 353 (delta 69), reused 65 (delta 29), pack-reused 240
+>Receiving objects: 100% (353/353), 97.77 KiB | 1.46 MiB/s, done.
+>Resolving deltas: 100% (217/217), done.
+>```
+>このような文章が返ってくればインストールは完了です。
+
+コマンドが入ったディレクトリに移動するため、続けて以下のコードを実行してください。
+```
+cd robosys.ver2/
+```
+>このディレクトリで、以下に紹介するコマンドを実行することで、各機能を利用することができます。
+
+>実行例
+>```bash:test.bash
+>$ cd robosys.ver2/
+>robosys.ver2/$ seq 5 |./plus
+>15
+>```
 
 <br>
 
